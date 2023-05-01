@@ -1,0 +1,106 @@
+{
+  "type": "record",
+  "name": "TradeRecord",
+  "namespace": "sr.rahhal.dev.v1",
+  "doc": "This topic contain data from wss://stream.binance.com:9443/ws/btcusdt@trade",
+  "fields": [
+    {
+      "name": "eventType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Event type",
+      "default": null
+    },
+    {
+      "name": "eventTime",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Event time",
+      "default": null
+    },
+    {
+      "name": "symbol",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Symbol",
+      "default": null
+    },
+    {
+      "name": "aggregationTradeId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Aggregate trade ID",
+      "default": null
+    },
+    {
+      "name": "price",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Price",
+      "default": null
+    },
+    {
+      "name": "quantity",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Quantity",
+      "default": null
+    },
+    {
+      "name": "firstTradeId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "First trade ID",
+      "default": null
+    },
+    {
+      "name": "lastTradeId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Last trade ID",
+      "default": null
+    },{
+      "name": "tradeTime",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Trade time",
+      "default": null
+    },
+    {
+      "name": "buyerIsMarketMaker",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Is the buyer the market maker?",
+      "default": null
+    },
+    {
+      "name": "ignore",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Ignore",
+      "default": null
+    }
+  ]
+}
