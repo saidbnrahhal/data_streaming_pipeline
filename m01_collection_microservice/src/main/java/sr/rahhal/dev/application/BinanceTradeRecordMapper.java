@@ -3,7 +3,7 @@ package sr.rahhal.dev.application;
 import sr.rahhal.dev.adapters.websocket.TradeDto;
 import sr.rahhal.dev.v1.TradeRecord;
 
-public class UserMapper {
+public class BinanceTradeRecordMapper {
 
     public static TradeRecord map(TradeDto userApi) {
         return TradeRecord.newBuilder()

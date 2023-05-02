@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.socket.client.WebSocketClient;
 import org.springframework.web.socket.client.standard.StandardWebSocketClient;
-import sr.rahhal.dev.application.UserProcessor;
+import sr.rahhal.dev.application.TradingDataBinanceProcessor;
 
 @SpringBootApplication
 public class MainApplication {
@@ -15,14 +15,4 @@ public class MainApplication {
         SpringApplication.run(MainApplication.class, args);
     }
 
-    @Bean
-    public ApplicationRunner initializeConnection(
-            UserProcessor rsvpsWebSocketHandler) {
-        return args -> {
-            WebSocketClient rsvpsSocketClient = new StandardWebSocketClient();
-
-            rsvpsSocketClient.doHandshake(
-                    rsvpsWebSocketHandler, "wss://stream.binance.com:9443/ws/btcusdt@trade");
-        };
-    }
 }
